@@ -1,0 +1,61 @@
+# Create .gitignore with proper content
+@"
+# Environment variables
+.env
+*.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
+
+# Verify it was created
+Get-Content .gitignore
+
+# Add, commit, and push
+git add .gitignore
+git commit -m "Add .gitignore file"
+git push origin main
