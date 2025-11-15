@@ -1,3 +1,21 @@
-fastapi
-uvicorn[standard]
-PyJWT
+# Core dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+pydantic-settings==2.6.0
+
+# Security
+pyjwt==2.9.0
+python-multipart==0.0.12
+
+# Rate limiting
+slowapi==0.1.9
+
+# Environment management
+python-dotenv==1.0.1
+
+# Optional: For production monitoring
+# prometheus-fastapi-instrumentator==7.0.0
+
+# Optional: For better logging
+# python-json-logger==2.0.7
